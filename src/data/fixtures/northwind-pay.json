@@ -1,0 +1,261 @@
+{
+  "sample": true,
+  "input": {
+    "domain": "northwind-pay.example",
+    "icp": "We sell RevOps analytics that gives sales leaders one trusted view of pipeline, for Series B+ B2B companies scaling their go-to-market team."
+  },
+  "asOf": "2026-09-29",
+  "company": {
+    "name": "Northwind Pay",
+    "domain": "northwind-pay.example",
+    "industry": "fintech",
+    "fundingStage": "series_c",
+    "employeeRange": "201-500",
+    "oneLiner": "Payments and treasury software for mid-market finance teams."
+  },
+  "signals": [
+    {
+      "id": "sig_1",
+      "type": "funding",
+      "title": "Raised an $80M Series C to double its GTM team",
+      "date": "2026-08-19",
+      "sourceUrl": "https://northwind-pay.example/newsroom/series-c",
+      "sourceTitle": "Northwind Pay raises $80M Series C",
+      "snippet": "Northwind Pay today announced an $80 million Series C round, which it will use to double its go-to-market team and expand into Europe.",
+      "icpRelevance": 3,
+      "snippetVerified": true
+    },
+    {
+      "id": "sig_2",
+      "type": "exec_hire",
+      "title": "Hired its first VP of Revenue Operations",
+      "date": "2026-09-08",
+      "sourceUrl": "https://northwind-pay.example/blog/welcome-dana",
+      "sourceTitle": "Welcoming our first VP of Revenue Operations",
+      "snippet": "We're excited to welcome Dana Okafor as our first VP of Revenue Operations, reporting to our CRO.",
+      "icpRelevance": 3,
+      "snippetVerified": true
+    },
+    {
+      "id": "sig_3",
+      "type": "hiring_surge",
+      "title": "14 open go-to-market roles",
+      "date": "2026-09-22",
+      "sourceUrl": "https://northwind-pay.example/careers",
+      "sourceTitle": "Careers at Northwind Pay",
+      "snippet": "Open roles: Account Executive (6), Sales Development Representative (5), RevOps Analyst (2), Sales Engineer (1).",
+      "icpRelevance": 2,
+      "snippetVerified": true
+    },
+    {
+      "id": "sig_4",
+      "type": "expansion",
+      "title": "Opened its first international office in London",
+      "date": "2026-07-01",
+      "sourceUrl": "https://northwind-pay.example/newsroom/london",
+      "sourceTitle": "Northwind Pay opens London office",
+      "snippet": "Northwind Pay has opened its first international office in London to serve customers across the UK and EU.",
+      "icpRelevance": 1,
+      "snippetVerified": true
+    },
+    {
+      "id": "sig_5",
+      "type": "launch",
+      "title": "Launched Northwind Treasury",
+      "date": "2026-06-10",
+      "sourceUrl": "https://northwind-pay.example/blog/treasury",
+      "sourceTitle": "Introducing Northwind Treasury",
+      "snippet": "Today we're launching Northwind Treasury, giving mid-market finance teams real-time cash visibility across every bank account.",
+      "icpRelevance": 1,
+      "snippetVerified": true
+    }
+  ],
+  "draft": {
+    "subject": "Pipeline visibility as Northwind scales",
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Congrats on the $80M Series C, and on the plan to double the go-to-market team.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s2",
+        "text": "Bringing on Dana Okafor as your first VP of Revenue Operations suggests pipeline reporting is about to get a lot more rigorous.",
+        "cites": [
+          "sig_2"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s3",
+        "text": "With 20 new sales reps starting this quarter, forecasting from a CRM that's still catching up gets painful fast.",
+        "cites": [
+          "sig_3"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s4",
+        "text": "Northwind was also named one of the fastest-growing fintechs of the year, so the board will be watching.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s5",
+        "text": "We help RevOps leaders get one trusted pipeline view across teams and regions, without another spreadsheet.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s6",
+        "text": "Worth a quick chat once Dana has settled in?",
+        "cites": [],
+        "kind": "generic"
+      }
+    ]
+  },
+  "verdicts": [
+    {
+      "sentenceId": "s1",
+      "verdict": "SUPPORTED",
+      "rationale": "The announcement states the $80 million Series C and the plan to double the go-to-market team.",
+      "quote": "an $80 million Series C round, which it will use to double its go-to-market team",
+      "source": "model"
+    },
+    {
+      "sentenceId": "s2",
+      "verdict": "PARTIAL",
+      "rationale": "The hire is stated; the claim that reporting will get more rigorous is a reasonable inference, not a stated fact.",
+      "quote": "welcome Dana Okafor as our first VP of Revenue Operations",
+      "source": "model"
+    },
+    {
+      "sentenceId": "s3",
+      "verdict": "UNSUPPORTED",
+      "rationale": "The careers page lists 14 open go-to-market roles, including 6 Account Executive openings. It doesn't say 20 reps are starting this quarter.",
+      "quote": "",
+      "source": "model"
+    },
+    {
+      "sentenceId": "s4",
+      "verdict": "UNSUPPORTED",
+      "rationale": "Labelled generic, but states a fact about Northwind Pay with no source: named one of the fastest-growing fintechs of the year",
+      "quote": "",
+      "source": "model"
+    }
+  ],
+  "repairs": {
+    "sentences": [
+      {
+        "id": "s3",
+        "text": "With 6 Account Executive and 5 SDR roles open, forecasting gets harder quickly.",
+        "cites": [
+          "sig_3"
+        ],
+        "kind": "claim"
+      }
+    ],
+    "verdicts": [
+      {
+        "sentenceId": "s3",
+        "verdict": "PARTIAL",
+        "rationale": "The role counts match the careers page; 'forecasting gets harder' is an inference.",
+        "quote": "Account Executive (6), Sales Development Representative (5)",
+        "source": "model"
+      }
+    ],
+    "removed": [
+      "s4"
+    ]
+  },
+  "final": {
+    "subject": "Pipeline visibility as Northwind scales",
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Congrats on the $80M Series C, and on the plan to double the go-to-market team.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s2",
+        "text": "Bringing on Dana Okafor as your first VP of Revenue Operations suggests pipeline reporting is about to get a lot more rigorous.",
+        "cites": [
+          "sig_2"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s3",
+        "text": "With 6 Account Executive and 5 SDR roles open, forecasting gets harder quickly.",
+        "cites": [
+          "sig_3"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s5",
+        "text": "We help RevOps leaders get one trusted pipeline view across teams and regions, without another spreadsheet.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s6",
+        "text": "Worth a quick chat once Dana has settled in?",
+        "cites": [],
+        "kind": "generic"
+      }
+    ]
+  },
+  "judge": {
+    "specificity": {
+      "score": 5,
+      "reason": "References the round, the new RevOps leader and actual open role counts."
+    },
+    "relevance": {
+      "score": 4,
+      "reason": "Ties hiring growth to forecasting pain; could name one concrete outcome."
+    },
+    "tone": {
+      "score": 4,
+      "reason": "Warm and brief; the second sentence is slightly presumptuous."
+    },
+    "spamRisk": {
+      "score": 5,
+      "reason": "No hype words, links or false urgency."
+    }
+  },
+  "injected": {
+    "sentence": {
+      "id": "s_injected",
+      "text": "I saw Northwind Pay also tripled revenue to $400M this year, which must be putting real pressure on the team.",
+      "cites": [
+        "sig_1"
+      ],
+      "kind": "claim"
+    },
+    "verdict": {
+      "sentenceId": "s_injected",
+      "verdict": "UNSUPPORTED",
+      "rationale": "The cited source covers the $80 million Series C. It says nothing about revenue, tripling or $400M.",
+      "quote": "",
+      "source": "model"
+    }
+  },
+  "criteria": {
+    "industries": [],
+    "minStage": "series_b",
+    "minEmployees": null,
+    "maxEmployees": null,
+    "need": "scaling their go-to-market team"
+  },
+  "contact": {
+    "role": "VP of Revenue Operations",
+    "why": "They just hired for this role and own the pipeline reporting this would improve."
+  }
+}

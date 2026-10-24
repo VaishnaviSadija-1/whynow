@@ -1,0 +1,257 @@
+{
+  "input": {
+    "domain": "linear.app",
+    "icp": "We sell RevOps analytics that gives sales leaders one trusted view of pipeline, for Series B+ B2B companies scaling their go-to-market team."
+  },
+  "asOf": "2026-09-29",
+  "company": {
+    "name": "Linear",
+    "domain": "linear.app",
+    "industry": "devtools",
+    "fundingStage": "series_c",
+    "employeeRange": "110-280",
+    "oneLiner": "Purpose-built issue tracking and project management tool for software development teams."
+  },
+  "signals": [
+    {
+      "id": "sig_1",
+      "type": "funding",
+      "title": "Linear valuation doubles to $2.5B via secondary round",
+      "date": "2026-08-01",
+      "sourceUrl": "https://multiples.vc/private-comps/linear",
+      "sourceTitle": "Linear Revenue, Valuation, Funding & Investors | Multiples",
+      "snippet": "Linear's valuation has grown 2.0x from $1.3B at its Series C in June 2025 to $2.5B in August 2026, across 2 priced rounds.",
+      "icpRelevance": 2,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_2",
+      "type": "news",
+      "title": "Linear hits $100M ARR with expanding enterprise base",
+      "date": "2026-07-01",
+      "sourceUrl": "https://sacra.com/c/linear/",
+      "sourceTitle": "Linear revenue, valuation & funding | Sacra",
+      "snippet": "Sacra estimates that Linear hit $100M in annual recurring revenue in July 2026.",
+      "icpRelevance": 3,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_3",
+      "type": "partnership",
+      "title": "Linear launches agent-powered integrations with Intercom, Zendesk, and Gong",
+      "date": "2025-12-01",
+      "sourceUrl": "https://sacra.com/c/linear/",
+      "sourceTitle": "Linear revenue, valuation & funding | Sacra",
+      "snippet": "In December 2025, Linear introduced agent-powered integrations with Intercom, Zendesk, and Gong.",
+      "icpRelevance": 1,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_4",
+      "type": "news",
+      "title": "NRR accelerates as enterprise logos like Salesforce and Figma join",
+      "date": "2026-01-01",
+      "sourceUrl": "https://sacra.com/c/linear/",
+      "sourceTitle": "Linear revenue, valuation & funding | Sacra",
+      "snippet": "More than 40,000 companies pay for Linear, with net revenue retention of 177% and enterprise customers including Salesforce and Figma added earlier in 2026.",
+      "icpRelevance": 2,
+      "snippetVerified": false
+    }
+  ],
+  "draft": {
+    "subject": "One trusted pipeline view for Linear's next stage",
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Saw Linear's valuation doubled to $2.5B on a recent secondary round.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s2",
+        "text": "That tracks with hitting $100M ARR and landing enterprise logos like Salesforce and Figma, with net revenue retention at 177%.",
+        "cites": [
+          "sig_2",
+          "sig_4"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s3",
+        "text": "You've also been expanding the platform with agent-powered integrations into Intercom, Zendesk, and Gong.",
+        "cites": [
+          "sig_3"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s4",
+        "text": "Growth like that usually means more reps, more tools, and a harder time keeping pipeline numbers consistent across teams.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s5",
+        "text": "We build RevOps analytics that gives sales leaders one trusted view of pipeline as go-to-market scales.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s6",
+        "text": "Worth a quick call to see if it'd help your team?",
+        "cites": [],
+        "kind": "generic"
+      }
+    ]
+  },
+  "verdicts": [
+    {
+      "sentenceId": "s1",
+      "verdict": "UNSUPPORTED",
+      "rationale": "Not in the source: secondary round. (Model said PARTIAL: The valuation growth and figures are supported, but the evidence describes 'priced rounds' rather than specifically a 'secondary round'.)",
+      "quote": "Linear's valuation has grown 2.0x from $1.3B at its Series C in June 2025 to $2.5B in August 2026",
+      "source": "detail_check"
+    },
+    {
+      "sentenceId": "s2",
+      "verdict": "UNSUPPORTED",
+      "rationale": "Verifier's evidence quote isn't in the cited source. (Model said SUPPORTED: All factual details in the sentence are directly supported by the evidence: $100M ARR is confirmed, Salesforce and Figma are named as enterprise customers, and the 177% net revenue retention figure is stated.)",
+      "quote": "Linear hit $100M in annual recurring revenue in July 2026. More than 40,000 companies pay for Linear, with net revenue retention of 177% and enterprise customers including Salesforce and Figma added earlier in 2026.",
+      "source": "quote_check"
+    },
+    {
+      "sentenceId": "s3",
+      "verdict": "SUPPORTED",
+      "rationale": "The evidence confirms that Linear has agent-powered integrations with all three platforms mentioned (Intercom, Zendesk, and Gong), and December 2025 falls within the recent past relative to today's date of September 2026.",
+      "quote": "In December 2025, Linear introduced agent-powered integrations with Intercom, Zendesk, and Gong.",
+      "source": "model"
+    }
+  ],
+  "repairs": {
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Saw Linear's valuation double to $2.5B across two priced rounds.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s2",
+        "text": "That tracks with hitting $100M ARR and landing enterprise logos like Salesforce and Figma, with net revenue retention at 177%.",
+        "cites": [
+          "sig_2",
+          "sig_4"
+        ],
+        "kind": "claim"
+      }
+    ],
+    "verdicts": [
+      {
+        "sentenceId": "s1",
+        "verdict": "SUPPORTED",
+        "rationale": "The evidence states Linear's valuation grew 2.0x from $1.3B to $2.5B across 2 priced rounds, which matches the claim of doubling to $2.5B across two priced rounds.",
+        "quote": "Linear's valuation has grown 2.0x from $1.3B at its Series C in June 2025 to $2.5B in August 2026, across 2 priced rounds.",
+        "source": "model"
+      },
+      {
+        "sentenceId": "s2",
+        "verdict": "UNSUPPORTED",
+        "rationale": "Verifier's evidence quote isn't in the cited source. (Model said SUPPORTED: All factual details—the $100M ARR milestone, enterprise customers Salesforce and Figma, and 177% net revenue retention—are directly stated in the evidence.)",
+        "quote": "Linear hit $100M in annual recurring revenue in July 2026. More than 40,000 companies pay for Linear, with net revenue retention of 177% and enterprise customers including Salesforce and Figma added earlier in 2026.",
+        "source": "quote_check"
+      }
+    ],
+    "removed": [
+      "s2"
+    ]
+  },
+  "final": {
+    "subject": "One trusted pipeline view for Linear's next stage",
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Saw Linear's valuation double to $2.5B across two priced rounds.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s3",
+        "text": "You've also been expanding the platform with agent-powered integrations into Intercom, Zendesk, and Gong.",
+        "cites": [
+          "sig_3"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s4",
+        "text": "Growth like that usually means more reps, more tools, and a harder time keeping pipeline numbers consistent across teams.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s5",
+        "text": "We build RevOps analytics that gives sales leaders one trusted view of pipeline as go-to-market scales.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s6",
+        "text": "Worth a quick call to see if it'd help your team?",
+        "cites": [],
+        "kind": "generic"
+      }
+    ]
+  },
+  "judge": {
+    "specificity": {
+      "score": 4,
+      "reason": "References Linear's specific valuation milestone ($2.5B), funding rounds, and concrete product integrations (Intercom, Zendesk, Gong). This is clearly researched and not generic flattery. Could be slightly more specific about their actual sales org structure or recent hiring."
+    },
+    "relevance": {
+      "score": 4,
+      "reason": "Makes a logical connection between Linear's growth trajectory and the problem of pipeline visibility across expanding teams. The 'more reps, more tools, harder to keep numbers consistent' bridges their situation to the solution well. Assumes sales scaling challenges that are reasonable for a $2.5B company."
+    },
+    "tone": {
+      "score": 4,
+      "reason": "Conversational and direct without being pushy. 'Worth a quick call' is soft and low-pressure. Not overly salesy. Could be slightly more human/personal, but strikes a good balance between professional and approachable."
+    },
+    "spamRisk": {
+      "score": 4,
+      "reason": "Reads like a genuine person who researched the prospect. No hype words, no false urgency, no excessive links or CTAs. The logic chain feels natural. Minor concern: subject line could be perceived as presumptuous ('for Linear's next stage'), but overall low spam indicators."
+    }
+  },
+  "injected": {
+    "sentence": {
+      "id": "s_injected",
+      "text": "I saw Linear also tripled revenue to $400M this year, which must be putting real pressure on the team.",
+      "cites": [
+        "sig_1"
+      ],
+      "kind": "claim"
+    },
+    "verdict": {
+      "sentenceId": "s_injected",
+      "verdict": "UNSUPPORTED",
+      "rationale": "The evidence only discusses Linear's valuation growth, not revenue figures or amounts, so the claim about tripling revenue to $400M is not supported.",
+      "quote": "",
+      "source": "model"
+    }
+  },
+  "criteria": {
+    "industries": [],
+    "minStage": "series_b",
+    "minEmployees": null,
+    "maxEmployees": null,
+    "need": "scaling their go-to-market team"
+  },
+  "contact": {
+    "role": "Head of Revenue Operations",
+    "why": "Enterprise logos and $100M ARR mean the pipeline needs one trusted view across a growing sales team."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "ran",
+  "ranAt": "2026-09-30T13:34:47.463Z",
+  "model": "claude-sonnet-5",
+  "total": 36,
+  "fabricated": 21,
+  "caught": 21,
+  "faithful": 15,
+  "falseAlarms": 0,
+  "accuracy": 1,
+  "misses": []
+}

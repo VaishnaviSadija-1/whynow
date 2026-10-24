@@ -1,26 +1,395 @@
 @import "tailwindcss";
 
+/*
+ * Palette: "proof ink". Cool graphite paper, a warm off-white/near-black ink,
+ * and a periwinkle "citation" accent (the colour of a footnote marker).
+ * Verdict colours (ok / bad / warn) and step tags (ai / code) stay semantic.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --paper: #f5f5f2;
+  --card: #ffffff;
+  --ink: #13151b;
+  --muted: #5a5f6a;
+  --faint: #9196a0;
+  --line: #e3e3de;
+  --line-strong: #cfcfc8;
+  --accent: #3446d4;
+  --accent-soft: #e9ecfc;
+  --ok: #0c7a52;
+  --ok-soft: #e0f3e9;
+  --warn: #8a5400;
+  --warn-soft: #faefd8;
+  --bad: #b3261e;
+  --bad-soft: #fbe8e6;
+  --ai: #5e3fc4;
+  --ai-soft: #efeafb;
+  --code: #17678a;
+  --code-soft: #e2f0f6;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --glow: rgb(52 70 212 / 0.22);
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.8) inset, 0 1px 2px rgb(19 21 27 / 0.04), 0 8px 24px -12px rgb(19 21 27 / 0.08);
+  --header-bg: var(--paper);
+  --nav-h: 3.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --paper: #0b0d12;
+    --card: #12151c;
+    --ink: #ecebe6;
+    --muted: #a0a4ae;
+    --faint: #6a6f7b;
+    --line: #222632;
+    --line-strong: #323746;
+    --accent: #a4b3ff;
+    --accent-soft: #1b2142;
+    --ok: #6ad9a8;
+    --ok-soft: #0f2a1f;
+    --warn: #efc06e;
+    --warn-soft: #2d2410;
+    --bad: #ff8e85;
+    --bad-soft: #35161a;
+    --ai: #c2b0ff;
+    --ai-soft: #221b3e;
+    --code: #85cfea;
+    --code-soft: #0d2732;
+
+    --glow: rgb(164 179 255 / 0.28);
+    --shadow-card: 0 1px 0 rgb(255 255 255 / 0.035) inset, 0 12px 32px -16px rgb(0 0 0 / 0.6);
+    --header-bg: var(--paper);
   }
 }
 
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-ai: var(--ai);
+  --color-ai-soft: var(--ai-soft);
+  --color-code: var(--code);
+  --color-code-soft: var(--code-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-instrument-serif);
+  --shadow-card: var(--shadow-card);
+}
+
+/* ---------- Base ---------- */
+
+html {
+  color-scheme: light dark;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(60rem 28rem at 50% -12rem, var(--accent-soft), transparent 70%);
+  background-repeat: no-repeat;
+  color: var(--ink);
+  font-feature-settings: "ss01", "cv11";
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@layer base {
+  a,
+  button {
+    transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+    transition-duration: 180ms;
+    transition-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+}
+
+/* Layered so Tailwind utilities (ring-*, shadow-*, tracking-*) still win. */
+@layer components {
+  .font-display {
+    letter-spacing: -0.012em;
+  }
+  /* Card-like surfaces get a subtle lift everywhere, without touching component files. */
+  .bg-card.border {
+    box-shadow: var(--shadow-card);
+  }
+}
+
+/* Sticky side panels in the demo sit below the sticky site header. */
+main :is(.lg\:top-6, .xl\:top-6) {
+  top: calc(var(--nav-h) + 1.25rem);
+}
+
+/* ---------- Header ---------- */
+
+/* Solid, so content never shows through the header while scrolling. */
+.site-header {
+  background: var(--header-bg);
+}
+
+.logo-mark {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 0 0 1px var(--line-strong), 0 4px 14px -4px var(--glow);
+}
+
+.link-quiet {
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 3px;
+}
+.link-quiet:hover {
+  color: var(--ink);
+  text-decoration-color: var(--accent);
+}
+
+/* ---------- Shared motion ---------- */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.35s ease-out both;
+}
+
+/* ---------- Landing: headline ---------- */
+
+@keyframes word-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+.word {
+  display: inline-block;
+  animation: word-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i) * 55ms + 80ms);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: var(--d, 0ms);
+}
+
+/* The underline that "cites" the key phrase draws itself in. */
+@keyframes underline-draw {
+  from {
+    background-size: 0% 2px;
+  }
+  to {
+    background-size: 100% 2px;
+  }
+}
+.cite-phrase {
+  color: var(--accent);
+  background-image: linear-gradient(90deg, var(--accent), color-mix(in oklab, var(--accent) 30%, transparent));
+  background-repeat: no-repeat;
+  background-position: 0 92%;
+  background-size: 100% 2px;
+  animation: underline-draw 0.9s cubic-bezier(0.6, 0, 0.2, 1) 0.75s both;
+}
+
+/* ---------- Landing: primary CTA ---------- */
+
+.cta-primary {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent), 0 10px 30px -10px var(--glow);
+  animation: cta-breathe 3.6s ease-in-out infinite;
+}
+.cta-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    color-mix(in oklab, var(--accent) 55%, transparent) 50%,
+    transparent 70%
+  );
+  transform: translateX(-120%);
+  animation: sheen 3.6s cubic-bezier(0.6, 0, 0.3, 1) 1.8s infinite;
+}
+.cta-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px var(--accent), 0 14px 36px -10px var(--glow);
+}
+.cta-primary .cta-arrow {
+  transition: transform 200ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.cta-primary:hover .cta-arrow {
+  transform: translateX(3px);
+}
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%);
+  }
+  45%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+@keyframes cta-breathe {
+  0%,
+  100% {
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent), 0 10px 30px -12px var(--glow);
+  }
+  50% {
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--accent) 70%, transparent), 0 12px 40px -8px var(--glow);
+  }
+}
+
+.cta-secondary {
+  background: color-mix(in oklab, var(--card) 70%, transparent);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+}
+.cta-secondary:hover {
+  border-color: var(--faint);
+  background: var(--card);
+}
+
+/* ---------- Landing: pipeline strip ---------- */
+
+.pipe {
+  --pipe: 7.5s;
+}
+.pipe-step {
+  position: relative;
+  isolation: isolate;
+}
+.pipe-step::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(120% 90% at 50% 0%, var(--accent-soft), transparent 70%);
+  opacity: 0;
+  animation: pipe-lit var(--pipe) ease-in-out infinite both;
+  animation-delay: calc(var(--i) * var(--pipe) / 5);
+}
+.pipe-step::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  animation: pipe-lit var(--pipe) ease-in-out infinite both;
+  animation-delay: calc(var(--i) * var(--pipe) / 5);
+}
+.pipe-num {
+  animation: pipe-num var(--pipe) ease-in-out infinite both;
+  animation-delay: calc(var(--i) * var(--pipe) / 5);
+}
+@keyframes pipe-lit {
+  0% {
+    opacity: 0;
+  }
+  6%,
+  20% {
+    opacity: 1;
+  }
+  30%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pipe-num {
+  0%,
+  30%,
+  100% {
+    color: var(--faint);
+  }
+  6%,
+  20% {
+    color: var(--accent);
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+  .pipe-step:first-child::before,
+  .pipe-step:first-child::after {
+    opacity: 1;
+  }
+}
+
+/* ---------- Landing: accounts preview ---------- */
+
+@keyframes live-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--ok) 55%, transparent); }
+  50% { box-shadow: 0 0 0 5px transparent; }
+}
+.live-dot {
+  animation: live-pulse 2s ease-out infinite;
+}
+@keyframes chip-glow {
+  0%, 100% { box-shadow: 0 0 0 0 transparent; }
+  50% { box-shadow: 0 0 14px -2px color-mix(in oklab, var(--ok) 60%, transparent); }
+}
+.chip-glow {
+  animation: chip-glow 2.8s ease-in-out 2.4s infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .live-dot, .chip-glow { animation: none; }
 }

@@ -1,0 +1,267 @@
+{
+  "input": {
+    "domain": "vercel.com",
+    "icp": "We sell RevOps analytics that gives sales leaders one trusted view of pipeline, for Series B+ B2B companies scaling their go-to-market team."
+  },
+  "asOf": "2026-09-29",
+  "company": {
+    "name": "Vercel, Inc.",
+    "domain": "vercel.com",
+    "industry": "devtools",
+    "fundingStage": "series_d_plus",
+    "employeeRange": "750-875",
+    "oneLiner": "AI Cloud platform for building, deploying, and securing AI-native web applications and agents."
+  },
+  "signals": [
+    {
+      "id": "sig_1",
+      "type": "hiring_surge",
+      "title": "Sales team grows to 37 quota-carrying reps",
+      "date": "2026",
+      "sourceUrl": "https://getlatka.com/companies/vercel",
+      "sourceTitle": "Vercel Revenue 2025: $200M ARR, $9.3B Valuation",
+      "snippet": "Vercel employs approximately 875 people as of 2026, up from 607 in 2024, including 37 sales reps that carry a quota.",
+      "icpRelevance": 3,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_2",
+      "type": "funding",
+      "title": "Vercel closes $300M Series F at $9.3B valuation",
+      "date": "2025-09-30",
+      "sourceUrl": "https://vercel.com/blog/series-f",
+      "sourceTitle": "Towards the AI Cloud: Our Series F - Vercel",
+      "snippet": "Today, Vercel announced an important milestone: a Series F funding round valuing our company at $9.3 billion. The $300M investment is co-led by longtime partners at Accel and new investors at GIC, alongside ...",
+      "icpRelevance": 3,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_3",
+      "type": "exec_hire",
+      "title": "Jeanne Grosser from Stripe joins as COO",
+      "date": "2025-09-30",
+      "sourceUrl": "https://www.businesswire.com/news/home/20250930898216/en/Vercel-Closes-Series-F-at-$9.3B-Valuation-to-Scale-the-AI-Cloud",
+      "sourceTitle": "Vercel Closes Series F at $9.3B Valuation to Scale the AI Cloud",
+      "snippet": "Vercel also strengthened its leadership team this year with several new executive additions, including Jeanne Grosser, former Chief Business Officer at Stripe, as COO",
+      "icpRelevance": 3,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_4",
+      "type": "partnership",
+      "title": "Multi-year partnership with Mercedes-AMG PETRONAS Formula One Team",
+      "date": "2026",
+      "sourceUrl": "https://www.businesswire.com/news/home/20250930898216/en/Vercel-Closes-Series-F-at-$9.3B-Valuation-to-Scale-the-AI-Cloud",
+      "sourceTitle": "Vercel Closes Series F at $9.3B Valuation to Scale the AI Cloud",
+      "snippet": "Today Vercel, the agentic infrastructure company, announced a new multi-year deal with the Mercedes-AMG PETRONAS Formula One Team.",
+      "icpRelevance": 1,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_5",
+      "type": "news",
+      "title": "Enterprise customer roster includes Anthropic, OpenAI, PayPal, Nike, Walmart, and others",
+      "date": "2025-09-30",
+      "sourceUrl": "https://www.finsmes.com/2025/10/vercel-closes-300m-series-f-funding-at-9-3-billion-valuation.html",
+      "sourceTitle": "Vercel Closes $300M Series F Funding at $9.3 Billion Valuation",
+      "snippet": "The company serves customers like Anthropic, OpenAI, Square, WPP, PayPal, Ramp, Supreme, Under Armour, AT&T, Hulu, Nike, Target, Walmart, Browserbase, Granola, and Luma, among many others.",
+      "icpRelevance": 2,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_6",
+      "type": "exec_hire",
+      "title": "Talha Tariq from IBM joins as CTO (Security)",
+      "date": "2025-10",
+      "sourceUrl": "https://www.businesswire.com/news/home/20250930898216/en/Vercel-Closes-Series-F-at-$9.3B-Valuation-to-Scale-the-AI-Cloud",
+      "sourceTitle": "Vercel Closes Series F at $9.3B Valuation to Scale the AI Cloud",
+      "snippet": "Talha Tariq, former CTO (Security) at IBM, as CTO (Security), starting in October 2025",
+      "icpRelevance": 1,
+      "snippetVerified": false
+    }
+  ],
+  "draft": {
+    "subject": "Pipeline visibility for Vercel's growing sales team",
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Congrats on closing the $300M Series F at a $9.3B valuation.",
+        "cites": [
+          "sig_2"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s2",
+        "text": "With your sales team now at 37 quota-carrying reps and headcount nearly doubling since 2024, keeping everyone aligned on pipeline can get messy fast.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s3",
+        "text": "Adding a new COO and CTO on top of that growth usually means more people asking for the same numbers, in different formats.",
+        "cites": [
+          "sig_3",
+          "sig_6"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s4",
+        "text": "We build RevOps analytics that gives sales leaders one trusted view of pipeline as go-to-market teams scale.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s5",
+        "text": "Would it be worth a quick chat to see if it fits how your team tracks deals today?",
+        "cites": [],
+        "kind": "generic"
+      }
+    ]
+  },
+  "verdicts": [
+    {
+      "sentenceId": "s1",
+      "verdict": "SUPPORTED",
+      "rationale": "The evidence explicitly states both the $300M Series F funding amount and the $9.3B valuation.",
+      "quote": "a Series F funding round valuing our company at $9.3 billion. The $300M investment is co-led by longtime partners at Accel and new investors at GIC",
+      "source": "model"
+    },
+    {
+      "sentenceId": "s2",
+      "verdict": "UNSUPPORTED",
+      "rationale": "Not in the source: headcount nearly doubling since 2024. (Model said PARTIAL: The sentence accurately states the 37 quota-carrying reps and that headcount increased since 2024, but 'nearly doubling' overstates the evidence which shows growth from 607 to 875 employees (approximately 44% increase, not near-doubling of ~100%).)",
+      "quote": "37 sales reps that carry a quota",
+      "source": "detail_check"
+    },
+    {
+      "sentenceId": "s3",
+      "verdict": "UNSUPPORTED",
+      "rationale": "Not in the source: the addition of a new CTO (only Chief of CTO Security role is mentioned, not a standalone CTO position); growth context (no specific growth metrics or circumstances are described in the evidence). (Model said PARTIAL: The sentence accurately states that new COO and CTO positions were added, but the growth claim and the causal inference about reporting requests are unsupported inferences not stated in the evidence.)",
+      "quote": "Vercel also strengthened its leadership team this year with several new executive additions, including Jeanne Grosser, former Chief Business Officer at Stripe, as COO",
+      "source": "detail_check"
+    }
+  ],
+  "repairs": {
+    "sentences": [
+      {
+        "id": "s2",
+        "text": "With your sales team now at 37 quota-carrying reps and headcount growing from 607 to 875 since 2024, keeping everyone aligned on pipeline can get messy fast.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s3",
+        "text": "Adding a new COO and Chief of Security on top of that growth usually means more people asking for the same numbers, in different formats.",
+        "cites": [
+          "sig_3",
+          "sig_6"
+        ],
+        "kind": "generic"
+      }
+    ],
+    "verdicts": [
+      {
+        "sentenceId": "s2",
+        "verdict": "SUPPORTED",
+        "rationale": "All factual details in the sentence are explicitly stated in the evidence: 37 quota-carrying reps, headcount growth from 607 to 875 since 2024, and the timeframe of 2024 to 2026.",
+        "quote": "Vercel employs approximately 875 people as of 2026, up from 607 in 2024, including 37 sales reps that carry a quota.",
+        "source": "model"
+      },
+      {
+        "sentenceId": "s3",
+        "verdict": "UNSUPPORTED",
+        "rationale": "Not in the source: Chief of Security title (the evidence states \"CTO (Security)\", not \"Chief of Security\"); the implication that growth preceded these hires. (Model said PARTIAL: The sentence accurately references the new COO and security executive additions, but oversimplifies the security role title and adds an inference about growth causing demand rather than stating it as fact.)",
+        "quote": "Vercel also strengthened its leadership team this year with several new executive additions, including Jeanne Grosser, former Chief Business Officer at Stripe, as COO",
+        "source": "detail_check"
+      }
+    ],
+    "removed": [
+      "s3"
+    ]
+  },
+  "final": {
+    "subject": "Pipeline visibility for Vercel's growing sales team",
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Congrats on closing the $300M Series F at a $9.3B valuation.",
+        "cites": [
+          "sig_2"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s2",
+        "text": "With your sales team now at 37 quota-carrying reps and headcount growing from 607 to 875 since 2024, keeping everyone aligned on pipeline can get messy fast.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s4",
+        "text": "We build RevOps analytics that gives sales leaders one trusted view of pipeline as go-to-market teams scale.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s5",
+        "text": "Would it be worth a quick chat to see if it fits how your team tracks deals today?",
+        "cites": [],
+        "kind": "generic"
+      }
+    ]
+  },
+  "judge": {
+    "specificity": {
+      "score": 4,
+      "reason": "The email references concrete, verified facts about Vercel: specific funding round ($300M Series F), valuation ($9.3B), sales team size (37 quota-carrying reps), and headcount growth trajectory (607 to 875). These details show research beyond surface-level."
+    },
+    "relevance": {
+      "score": 3,
+      "reason": "The connection between growth metrics and pipeline visibility pain is logical, but somewhat assumed rather than grounded in Vercel's specific situation. The email doesn't reference how Vercel currently tracks deals, their known GTM challenges, or why this prospect would uniquely need this solution. It feels like a templated pain point applied to their growth stage."
+    },
+    "tone": {
+      "score": 4,
+      "reason": "The email is conversational and avoids hype language or pushiness. It opens with a genuine congratulations, uses natural phrasing ('can get messy fast'), and closes with a low-pressure question. The 'quick chat' CTA is appropriately soft."
+    },
+    "spamRisk": {
+      "score": 4,
+      "reason": "This reads like a personalized note from a human. No excessive links, fake urgency, or spam trigger words like 'limited time' or 'exclusive.' The specificity of numbers and data points actually reduces spam risk by demonstrating legitimate research. Minor deduction only because cold outreach to senior leads always carries some inherent risk, but this avoids obvious spam markers."
+    }
+  },
+  "injected": {
+    "sentence": {
+      "id": "s_injected",
+      "text": "I saw Vercel, Inc. also tripled revenue to $400M this year, which must be putting real pressure on the team.",
+      "cites": [
+        "sig_1"
+      ],
+      "kind": "claim"
+    },
+    "verdict": {
+      "sentenceId": "s_injected",
+      "verdict": "UNSUPPORTED",
+      "rationale": "The evidence provides information about Vercel's employee count but contains no factual details about revenue, revenue growth, or the specific figure of $400M.",
+      "quote": "",
+      "source": "model"
+    }
+  },
+  "criteria": {
+    "industries": [],
+    "minStage": "series_b",
+    "minEmployees": null,
+    "maxEmployees": null,
+    "need": "scaling their go-to-market team"
+  },
+  "contact": {
+    "role": "VP of Sales",
+    "why": "The sales team grew to 37 quota-carrying reps, so pipeline reporting is now the sales head's problem."
+  }
+}

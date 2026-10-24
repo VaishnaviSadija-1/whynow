@@ -1,0 +1,257 @@
+{
+  "input": {
+    "domain": "fello.ai",
+    "icp": "We sell RevOps analytics that gives sales leaders one trusted view of pipeline, for Series B+ B2B companies scaling their go-to-market team."
+  },
+  "asOf": "2026-09-30",
+  "company": {
+    "name": "Fello",
+    "domain": "fello.ai",
+    "industry": "proptech",
+    "fundingStage": "series_b",
+    "employeeRange": "150-200",
+    "oneLiner": "AI-powered CRM, lead intelligence, and marketing automation platform for residential real estate agents and teams."
+  },
+  "signals": [
+    {
+      "id": "sig_1",
+      "type": "launch",
+      "title": "Fello launches Felix, an autonomous AI teammate for lead follow-up",
+      "date": "2026-06-25",
+      "sourceUrl": "https://fello.ai/blogs/fello-launches-felix-the-ai-teammate-that-fixes-real-estate-teams-1-problem",
+      "sourceTitle": "Fello Launches Felix, The AI Teammate That Fixes Real Estate Teams' #1 Problem",
+      "snippet": "Today, Fello announced a better answer: Felix — the first AI teammate built for real estate. Felix handles the follow-up automatically, so agents can do what they do best: build trust and close deals.",
+      "icpRelevance": 2,
+      "snippetVerified": true
+    },
+    {
+      "id": "sig_2",
+      "type": "expansion",
+      "title": "Fello surpasses 1,000+ WSJ RealTrends customer teams",
+      "date": "2026-06-25",
+      "sourceUrl": "https://fello.ai/blogs/fello-launches-felix-the-ai-teammate-that-fixes-real-estate-teams-1-problem",
+      "sourceTitle": "Fello Launches Felix, The AI Teammate That Fixes Real Estate Teams' #1 Problem",
+      "snippet": "Join the 1,000+ WSJ RealTrends teams already on Fello and put Felix to work.",
+      "icpRelevance": 2,
+      "snippetVerified": true
+    },
+    {
+      "id": "sig_3",
+      "type": "hiring_surge",
+      "title": "Fello actively hiring GTM, growth, and customer success leadership",
+      "date": "2026-06-25",
+      "sourceUrl": "https://www.zoominfo.com/c/fello/565761083",
+      "sourceTitle": "Fello - Overview, News & Similar companies | ZoomInfo.com",
+      "snippet": "Fello is currently seeking a Head of Finance... Fello is currently seeking a Senior Manager, Scaled Customer Success... Fello is currently seeking a AI Applied Engineer, Go-To-Market AI Team... Fello is currently seeking a Director, Growth Programs & Lifecycle Marketing.",
+      "icpRelevance": 2,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_4",
+      "type": "news",
+      "title": "Inman covers Felix's rapid traction",
+      "date": "2026-05-22",
+      "sourceUrl": "https://www.inman.com/2026/05/22/fello-ai-real-estate-lead-followup-tool/",
+      "sourceTitle": "Meet Felix, The AI Agent That Real Estate Prospects Mistake For A Human",
+      "snippet": "Fello's new AI agent Felix calls, texts and qualifies leads autonomously, then hands them off to human agents while the prospect is still on the line.",
+      "icpRelevance": 1,
+      "snippetVerified": false
+    },
+    {
+      "id": "sig_5",
+      "type": "launch",
+      "title": "Rapid customer results from Felix rollout",
+      "date": "2026-06-25",
+      "sourceUrl": "https://fello.ai/blogs/fello-launches-felix-the-ai-teammate-that-fixes-real-estate-teams-1-problem",
+      "sourceTitle": "Fello Launches Felix, The AI Teammate That Fixes Real Estate Teams' #1 Problem",
+      "snippet": "In just 8 days, the Robert Slack Team generated 121 warm agent handoffs. No new leads. No new hires.",
+      "icpRelevance": 1,
+      "snippetVerified": true
+    }
+  ],
+  "draft": {
+    "subject": "Scaling Felix, scaling pipeline visibility?",
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Congrats on launching Felix, your AI teammate that handles lead follow-up automatically for agents.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s2",
+        "text": "With over 1,000 WSJ RealTrends teams already on Fello, your GTM engine is clearly scaling fast.",
+        "cites": [
+          "sig_2"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s3",
+        "text": "I noticed you're hiring for Growth, Customer Success, and GTM AI leadership roles, a sign your revenue org is growing quickly too.",
+        "cites": [
+          "sig_3"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s4",
+        "text": "As new leaders and processes come online, keeping one trusted view of pipeline across teams gets harder.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s5",
+        "text": "We build RevOps analytics for scaling B2B teams so sales leaders can see pipeline health in one place.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s6",
+        "text": "Worth a quick chat to see if it fits where Fello's headed?",
+        "cites": [],
+        "kind": "generic"
+      }
+    ]
+  },
+  "verdicts": [
+    {
+      "sentenceId": "s1",
+      "verdict": "SUPPORTED",
+      "rationale": "The evidence confirms Fello announced Felix, an AI teammate that automatically handles lead follow-up for agents.",
+      "quote": "Today, Fello announced a better answer: Felix — the first AI teammate built for real estate. Felix handles the follow-up automatically, so agents can do what they do best: build trust and close deals.",
+      "source": "model"
+    },
+    {
+      "sentenceId": "s2",
+      "verdict": "PARTIAL",
+      "rationale": "The 1,000+ WSJ RealTrends teams figure is supported, but the claim that this shows your GTM engine is 'clearly scaling fast' is an added opinion/inference not stated in the evidence.",
+      "quote": "Join the 1,000+ WSJ RealTrends teams already on Fello and put Felix to work.",
+      "source": "model"
+    },
+    {
+      "sentenceId": "s3",
+      "verdict": "UNSUPPORTED",
+      "rationale": "The evidence only shows a non-leadership 'AI Applied Engineer' role and is over 60 days old, so presenting current hiring for 'GTM AI leadership' roles as true today overstates and misrepresents the evidence.",
+      "quote": "Fello is currently seeking a AI Applied Engineer, Go-To-Market AI Team...",
+      "source": "model"
+    }
+  ],
+  "repairs": {
+    "sentences": [
+      {
+        "id": "s3",
+        "text": "Back in June, I saw Fello hiring for roles spanning Growth Programs, Scaled Customer Success, and GTM AI - a sign of a fast-growing revenue org.",
+        "cites": [
+          "sig_3"
+        ],
+        "kind": "claim"
+      }
+    ],
+    "verdicts": [
+      {
+        "sentenceId": "s3",
+        "verdict": "PARTIAL",
+        "rationale": "The three hiring roles (Growth Programs, Scaled Customer Success, GTM AI) match evidence from a June-dated source, but the claim that this indicates 'a fast-growing revenue org' is an unverified inference.",
+        "quote": "Fello is currently seeking a Senior Manager, Scaled Customer Success... Fello is currently seeking a AI Applied Engineer, Go-To-Market AI Team... Fello is currently seeking a Director, Growth Programs & Lifecycle Marketing.",
+        "source": "model"
+      }
+    ],
+    "removed": []
+  },
+  "final": {
+    "subject": "Scaling Felix, scaling pipeline visibility?",
+    "sentences": [
+      {
+        "id": "s1",
+        "text": "Congrats on launching Felix, your AI teammate that handles lead follow-up automatically for agents.",
+        "cites": [
+          "sig_1"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s2",
+        "text": "With over 1,000 WSJ RealTrends teams already on Fello, your GTM engine is clearly scaling fast.",
+        "cites": [
+          "sig_2"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s3",
+        "text": "Back in June, I saw Fello hiring for roles spanning Growth Programs, Scaled Customer Success, and GTM AI - a sign of a fast-growing revenue org.",
+        "cites": [
+          "sig_3"
+        ],
+        "kind": "claim"
+      },
+      {
+        "id": "s4",
+        "text": "As new leaders and processes come online, keeping one trusted view of pipeline across teams gets harder.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s5",
+        "text": "We build RevOps analytics for scaling B2B teams so sales leaders can see pipeline health in one place.",
+        "cites": [],
+        "kind": "generic"
+      },
+      {
+        "id": "s6",
+        "text": "Worth a quick chat to see if it fits where Fello's headed?",
+        "cites": [],
+        "kind": "generic"
+      }
+    ]
+  },
+  "judge": {
+    "specificity": {
+      "score": 4,
+      "reason": "References concrete facts: Felix product launch, 1000+ WSJ RealTrends teams on Fello, specific June hiring roles (Growth Programs, Scaled Customer Success, GTM AI). Shows research into company trajectory. Minor deduction because 'Felix' appears to be slightly confused messaging (unclear if this is their product or a feature)."
+    },
+    "relevance": {
+      "score": 4,
+      "reason": "Strong connection: hiring for GTM roles + rapid scaling → pipeline visibility becomes harder → RevOps analytics solves this. The logic flows naturally and addresses a real pain point for scaling teams. Relevant to their likely stage and growth phase."
+    },
+    "tone": {
+      "score": 4,
+      "reason": "Conversational and confident without being pushy. 'Worth a quick chat' is soft. Genuine congratulations without excessive flattery. One minor issue: the question mark after 'Scaling Felix, scaling pipeline visibility?' in subject could read as slightly manufactured urgency or trying too hard."
+    },
+    "spamRisk": {
+      "score": 4,
+      "reason": "Reads like a thoughtful person who did research. No hype words, no false urgency, no excessive links or CTAs. Specific facts ground it in reality. Only minor flag: the subject line is slightly constructed/clever, which can sometimes trigger filters, but overall this is clean and personal."
+    }
+  },
+  "injected": {
+    "sentence": {
+      "id": "s_injected",
+      "text": "I saw Fello also tripled revenue to $400M this year, which must be putting real pressure on the team.",
+      "cites": [
+        "sig_1"
+      ],
+      "kind": "claim"
+    },
+    "verdict": {
+      "sentenceId": "s_injected",
+      "verdict": "UNSUPPORTED",
+      "rationale": "The evidence only mentions Fello launching an AI teammate called Felix and contains no information about revenue figures or growth.",
+      "quote": "",
+      "source": "model"
+    }
+  },
+  "criteria": {
+    "industries": [],
+    "minStage": "series_b",
+    "minEmployees": null,
+    "maxEmployees": null,
+    "need": "scaling their go-to-market team"
+  },
+  "contact": {
+    "role": "VP of Sales",
+    "why": "Fello is hiring go-to-market leadership, so the sales head owns pipeline visibility."
+  }
+}
